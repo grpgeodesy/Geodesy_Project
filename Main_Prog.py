@@ -432,10 +432,10 @@ def Transformation_coor_Geocentriques_Geodesiques(x,y,z,a,b,eps):
             Laambda='               '
             h=abs(z)-b
             if z<0:
-                phi1=-pi
+                phi1=-pi/2
                 phi1=phi1*180/pi
             else:
-                phi1=pi
+                phi1=pi/2
                 phi1=phi1*180/pi
     else :
             if x>0:
