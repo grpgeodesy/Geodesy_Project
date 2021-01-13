@@ -715,7 +715,7 @@ def Transformation_coor_Geocentriques_Astronomique(Phi3,Lambda3,DeltaX3,DeltaY3,
             g=cos(Phi3)
             h=0
             i=sin(Phi3)
-            V1=a*DeltaX3+e*DeltaY3+h*DeltaZ3
+            V1=a*DeltaX3+d*DeltaY3+g*DeltaZ3
             V2=b*DeltaX3+e*DeltaY3+h*DeltaZ3
             V3=c*DeltaX3+f*DeltaY3+i*DeltaZ3
         
@@ -1008,14 +1008,14 @@ def Transformation_coor_Astronomique_Geocentriques(phi,Laambda,az,av,c) :
             v3=c*sin(av)
             a=-sin(phi)*cos(Laambda)
             b=-sin(Laambda)
-            c=cos(phi)*cos(Laambda)
+            C=cos(phi)*cos(Laambda)
             d=-sin(phi)*sin(Laambda)
             e=cos(Laambda)
             f=cos(phi)*sin(Laambda)
             g=cos(phi)
             h=0
             i=sin(phi)
-            x=a*v1+b*v2+c*v3
+            x=a*v1+b*v2+C*v3
             y=d*v1+e*v2+f*v3
             z=g*v1+h*v2+i*v3
             l.append(x)
