@@ -1759,8 +1759,8 @@ En cas d'ambiguité consulter le guide d'utilisation""")
         
 def g6et_coordonnees_geodesiques_locales2():
   
-         global Valeur13,Valeur14,entry6_3,entry6_4,entry6_5,canvas6,Mafenetre10,echelle13,echelle14
-##    try:
+    global Valeur13,Valeur14,entry6_3,entry6_4,entry6_5,canvas6,Mafenetre10,echelle13,echelle14
+    try:
         
          lambdap,phip,DeltaXpq,DeltaYpq,DeltaZpq=float(echelle13.get()),float(echelle14.get()),float(entry6_3.get()),float(entry6_4.get()),float(entry6_5.get())#(alphapq,cpq,vpq)
     
@@ -1785,9 +1785,9 @@ def g6et_coordonnees_geodesiques_locales2():
          label12 = Label(Mafenetre10, text= C3 ,font=('Ink Free', 10, 'bold'))
          canvas6.create_window(200, 560, window=label12)
        
-##    except:
-##        messagebox.showerror('domain error',"""Verifier les valeurs que vous avez saisirez
-##En cas d'ambiguité consulter le guide d'utilisation""")  
+    except:
+        messagebox.showerror('domain error',"""Verifier les valeurs que vous avez saisirez
+En cas d'ambiguité consulter le guide d'utilisation""")  
         
 def lon_lat_interval6():
     
